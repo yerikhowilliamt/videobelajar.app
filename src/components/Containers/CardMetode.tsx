@@ -206,7 +206,6 @@ const DebitCreditCard = () => {
 };
 
 const Summary = () => {
-  };
   return (
     <div className="w-full h-full bg-light-primary p-6 gap-6 flex flex-col border rounded-[10px]">
       <h5 className="text-h5 text-dark-primary font-heading font-semibold">
