@@ -206,12 +206,6 @@ const DebitCreditCard = () => {
 };
 
 const Summary = () => {
-  const [click, setClick] = useState(false);
-  const router = useRouter();
-
-  const handleClick = () => {
-    setClick(!click);
-    router.push("/bayar");
   };
   return (
     <div className="w-full h-full bg-light-primary p-6 gap-6 flex flex-col border rounded-[10px]">
@@ -245,7 +239,7 @@ const Summary = () => {
         </span>
       </div>
       <Button
-        onClick={() => handleClick()}
+        
         className="text-body-medium py-2 text-light-primary font-body font-bold bg-main-primary rounded-[10px]"
       >
         Beli Sekarang
