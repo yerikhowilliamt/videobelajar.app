@@ -68,10 +68,10 @@ const FormRegister = () => {
         {" "}
         Lupa Password?
       </a>
-      <Button onClick={() => handleSubmit} className="w-full bg-main-primary text-light-primary text-body-medium font-body font-bold p-2 rounded-xl">
+      <Button onClick={handleSubmit} className="w-full bg-main-primary text-light-primary text-body-medium font-body font-bold p-2 rounded-xl">
         Daftar
       </Button>
-      <Button onClick={() => handleLogin} className="w-full bg-main-primary-100 text-primary text-body-medium font-body font-bold p-2 rounded-xl">
+      <Button onClick={handleLogin} className="w-full bg-main-primary-100 text-primary text-body-medium font-body font-bold p-2 rounded-xl">
         Masuk
       </Button>
       <span className="before:content[''] before:block before:h-0.5 before:bg-gray-300 after:content[''] after:block after:h-0.5 after:bg-gray-300 grid text-center grid-cols-3 items-center w-full">

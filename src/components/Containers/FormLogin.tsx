@@ -48,13 +48,13 @@ const FormLogin = () => {
         Lupa Password?
       </Link>
       <Button
-        onClick={() => handleSubmit}
+        onClick={handleSubmit}
         className="w-full bg-main-primary text-light-primary text-body-medium font-body font-bold p-2 rounded-xl"
       >
         Masuk
       </Button>
       <Button
-        onClick={() => handleRegister}
+        onClick={handleRegister}
         className="w-full bg-main-primary-100 text-primary text-body-medium font-body font-bold p-2 rounded-xl"
       >
         Daftar

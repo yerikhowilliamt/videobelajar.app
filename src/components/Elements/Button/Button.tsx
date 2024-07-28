@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type ButtonProps = {
-  onClick?: () => void;
+  onClick?: any;
   className?: string;
   src?: string;
   alt?: any;
