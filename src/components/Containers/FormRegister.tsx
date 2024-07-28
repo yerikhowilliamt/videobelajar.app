@@ -25,7 +25,7 @@ const FormRegister = () => {
   }
 
   return (
-    <form className="w-full flex flex-col gap-6">
+    <form onSubmit={handleSubmit} className="w-full flex flex-col gap-6">
       <InputLabel
         className="after:content-['*'] after:ml-0.5 after:text-red-500 md:text-body-medium text-body-small font-body"
         name="fullName"
