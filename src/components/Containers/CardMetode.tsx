@@ -28,13 +28,12 @@ const BankTrasnfer = () => {
     setClick(!click);
   };
   return (
-    <ul className="flex flex-col gap-2.5">
+    <ul onClick={handleCLick} className="flex flex-col gap-2.5">
       <li className="flex justify-between py-4 px-5 border rounded-[10px]">
         <span className="text-body  text-dark-primary font-bold font-body">
           Transfer Bank
         </span>
         <Button
-          onClick={() => handleCLick()}
           src={
             click ? "/icons/Arrow Down Icon.png" : "/icons/Arrow Up Icon.png"
           }
@@ -101,13 +100,12 @@ const EWallet = () => {
     setClick(!click);
   };
   return (
-    <ul className="flex flex-col gap-2.5">
+    <ul onClick={handleCLick} className="flex flex-col gap-2.5">
       <li className="flex justify-between py-4 px-5 border rounded-[10px]">
         <span className="text-body  text-dark-primary font-bold font-body">
           E-Wallet
         </span>
         <Button
-          onClick={() => handleCLick()}
           src={
             click ? "/icons/Arrow Down Icon.png" : "/icons/Arrow Up Icon.png"
           }
@@ -172,13 +170,12 @@ const DebitCreditCard = () => {
   };
 
   return (
-    <ul className="flex flex-col gap-2.5">
+    <ul onClick={handleCLick} className="flex flex-col gap-2.5">
       <li className="flex justify-between py-4 px-5 border rounded-[10px]">
         <span className="text-body  text-dark-primary font-bold font-body">
           Kartu Kredit/Debit
         </span>
         <Button
-          onClick={() => handleCLick()}
           src={
             click ? "/icons/Arrow Down Icon.png" : "/icons/Arrow Up Icon.png"
           }
@@ -237,10 +234,7 @@ const Summary = () => {
           Rp 774.500
         </span>
       </div>
-      <Button
-        
-        className="text-body-medium py-2 text-light-primary font-body font-bold bg-main-primary rounded-[10px]"
-      >
+      <Button className="text-body-medium py-2 text-light-primary font-body font-bold bg-main-primary rounded-[10px]">
         Beli Sekarang
       </Button>
     </div>

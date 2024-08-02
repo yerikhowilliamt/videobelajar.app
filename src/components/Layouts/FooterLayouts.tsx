@@ -4,9 +4,13 @@ import Logo from "../Containers/Logo";
 import Image from "next/image";
 import Button from "../Elements/Button/Button";
 
-const FooterLayouts: React.FC = () => {
+type FooterLayoutsProps = {
+  display?: string
+}
+
+const FooterLayouts = ({display}: FooterLayoutsProps) => {
   return (
-    <footer className="border w-full flex flex-col justify-center items-center gap-5 py-7 px-5 md:py-[64px] md:px-[120px] bg-primary">
+    <footer className={`border w-full ${display} flex-col justify-center items-center gap-5 py-7 px-5 md:py-[64px] md:px-[120px] bg-primary`}>
       <Header />
       <Body />
       <Footer />
